@@ -1,2 +1,2 @@
-json.extract! cliente, :id, :nome, :cpf, :senha, :created_at, :updated_at
+json.extract! cliente, :id, :nome, :cpf, :email, :id_endereco, :created_at, :updated_at
 json.url cliente_url(cliente, format: :json)

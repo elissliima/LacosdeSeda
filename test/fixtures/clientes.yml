@@ -3,9 +3,11 @@
 one:
   nome: MyString
   cpf: MyString
-  senha: MyString
+  email: MyString
+  id_endereco: 1
 
 two:
   nome: MyString
   cpf: MyString
-  senha: MyString
+  email: MyString
+  id_endereco: 1

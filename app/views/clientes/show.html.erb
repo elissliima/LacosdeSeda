@@ -6,10 +6,19 @@
 </p>
 
 <p>
-  <strong>CPF:</strong>
+  <strong>Cpf:</strong>
   <%= @cliente.cpf %>
 </p>
 
+<p>
+  <strong>Email:</strong>
+  <%= @cliente.email %>
+</p>
+
+<p>
+  <strong>Id endereco:</strong>
+  <%= @cliente.id_endereco %>
+</p>
 
 <%= link_to 'Edit', edit_cliente_path(@cliente) %> |
 <%= link_to 'Back', clientes_path %>
