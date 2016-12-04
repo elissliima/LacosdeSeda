@@ -4,10 +4,22 @@ one:
   nome: MyString
   cpf: MyString
   email: MyString
-  id_endereco: 1
+  senha: MyString
+  logradouro: MyString
+  numero_casa: MyString
+  bairro: MyString
+  cidade: MyString
+  estado: MyString
+  complemento: MyString
 
 two:
   nome: MyString
   cpf: MyString
   email: MyString
-  id_endereco: 1
+  senha: MyString
+  logradouro: MyString
+  numero_casa: MyString
+  bairro: MyString
+  cidade: MyString
+  estado: MyString
+  complemento: MyString

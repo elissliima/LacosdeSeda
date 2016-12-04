@@ -4,7 +4,13 @@ class CreateClientes < ActiveRecord::Migration[5.0]
       t.string :nome
       t.string :cpf
       t.string :email
-      t.integer :id_endereco
+      t.string :senha
+      t.string :logradouro
+      t.string :numero_casa
+      t.string :bairro
+      t.string :cidade
+      t.string :estado
+      t.string :complemento
 
       t.timestamps
     end
