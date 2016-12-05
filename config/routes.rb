@@ -3,7 +3,6 @@ Rails.application.routes.draw do
   #get 'sessao/new'
   get 'sessao/create'
   get 'sessao/destroy'
-  resources :usuarios
 
   get 'admin' => 'admin#index'
   controller :sessao do
