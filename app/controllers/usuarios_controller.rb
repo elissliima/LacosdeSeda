@@ -1,5 +1,6 @@
 class UsuariosController < ApplicationController
   before_action :set_usuario, only: [:show, :edit, :update, :destroy]
+  skip_before_action :authorize, only: [:new, :create, :index]
 
   # GET /usuarios
   # GET /usuarios.json
@@ -28,7 +29,7 @@ class UsuariosController < ApplicationController
 
     respond_to do |format|
       if @usuario.save
-        format.html { redirect_to @usuario, notice: 'Usuario was successfully created.' }
+        format.html { redirect_to admin_url, notice: 'Bem-vindo a nossa loja.' }
         format.json { render :show, status: :created, location: @usuario }
       else
         format.html { render :new }
@@ -42,7 +43,7 @@ class UsuariosController < ApplicationController
   def update
     respond_to do |format|
       if @usuario.update(usuario_params)
-        format.html { redirect_to @usuario, notice: 'Usuario was successfully updated.' }
+        format.html { redirect_to users_url, notice: 'Usuario was successfully updated.' }
         format.json { render :show, status: :ok, location: @usuario }
       else
         format.html { render :edit }
